@@ -1,10 +1,10 @@
 /**
  * Created by chenanguo on 2016/10/14.
  */
-import React, { Component, PropTypes } from 'react'
-import ReactDOM from 'react-dom'
-import { createStore } from 'redux'
-import { Provider, connect } from 'react-redux'
+import React, { Component, PropTypes } from 'react';
+import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider, connect } from 'react-redux';
 
 // React component
 class Counter extends Component {
@@ -39,7 +39,7 @@ function counter(state = { count: 0 }, action) {
 }
 
 // Store
-const store = createStore(counter)
+const store = createStore(counter);
 
 // Map Redux state to component props
 function mapStateToProps(state) {
