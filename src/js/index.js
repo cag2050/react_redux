@@ -1,7 +1,7 @@
 /**
  * Created by chenanguo on 2016/10/14.
  */
-import React, {PropTypes} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider, connect} from 'react-redux';
@@ -20,8 +20,8 @@ class Counter extends React.Component {
 }
 
 Counter.propTypes = {
-    value: PropTypes.number.isRequired,
-    onIncreaseClick: PropTypes.func.isRequired
+    value: React.PropTypes.number.isRequired,
+    onIncreaseClick: React.PropTypes.func.isRequired
 };
 
 // Action
