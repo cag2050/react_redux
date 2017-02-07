@@ -27,7 +27,7 @@ Counter.propTypes = {
 // Action
 const increaseAction = {type: 'increase'};
 
-// Reducer
+// 首先定义一个改变数据的函数，成为reducer
 function counter(state = {count: 0}, action) {
     const count = state.count;
     switch (action.type) {
