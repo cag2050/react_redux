@@ -24,10 +24,10 @@ Counter.propTypes = {
     onIncreaseClick: React.PropTypes.func.isRequired
 };
 
-// Action：要做的动作
+// Action：要做的动作的类型
 const increaseAction = {type: 'increase'};
 
-//Reducer作用： 根据 Action 来更新 State。
+// Reducer作用： 根据 Action 来更新 State。
 // 首先定义一个改变数据的函数，成为reducer
 function counter(state = {count: 0}, action) {
     const count = state.count;
@@ -64,6 +64,7 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
+// connect方法作用===：用于从 UI 组件生成容器组件。
 // React-Redux 将所有组件分成两大类：UI 组件（presentational component）和容器组件（container component）。
 // UI 组件负责 UI 的呈现，容器组件负责管理数据和逻辑。
 // 如果一个组件既有 UI 又有业务逻辑，那怎么办？回答是，将它拆分成下面的结构：外面是一个容器组件，里面包了一个UI 组件。前者负责与外部的通信，将数据传给后者，由后者渲染出视图。
